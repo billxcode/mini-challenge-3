@@ -1,1 +1,1 @@
-# mini-challenge-3
+# Mini Challenge 3

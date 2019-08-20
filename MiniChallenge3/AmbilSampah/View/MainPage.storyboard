@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="otM-Lv-b5t">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ambil Sampah-->
+        <scene sceneID="xHl-Nm-DDE">
+            <objects>
+                <viewController title="Ambil Sampah" id="i7R-SQ-xV0" customClass="AmbilSampahViewController" customModule="MiniChallenge3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EGd-Ee-eix">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YzV-TL-6dc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VtX-fZ-jnG">
+                                <rect key="frame" x="10" y="98" width="394" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1s-hf-evh">
+                                        <rect key="frame" x="0.0" y="0.0" width="193" height="36"/>
+                                        <color key="backgroundColor" red="0.97682690230000002" green="0.97682690230000002" blue="0.97682690230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Lokasi Saya"/>
+                                        <connections>
+                                            <action selector="lokasiSayaBtn:" destination="i7R-SQ-xV0" eventType="touchUpInside" id="tPR-Cm-qol"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3S5-U9-oXl">
+                                        <rect key="frame" x="201" y="0.0" width="193" height="36"/>
+                                        <color key="backgroundColor" red="0.97682690230000002" green="0.97682690230000002" blue="0.97682690230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Cari Pelanggan"/>
+                                        <connections>
+                                            <action selector="cariPelangganBtn:" destination="i7R-SQ-xV0" eventType="touchUpInside" id="5XF-aK-xg4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AtX-J8-FSH">
+                                <rect key="frame" x="10" y="747" width="394" height="56"/>
+                                <color key="backgroundColor" red="0.97682690230000002" green="0.97682690230000002" blue="0.97682690230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="lib-9a-9bk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Ambil Sampah"/>
+                                <connections>
+                                    <action selector="ambilSampahBtn:" destination="i7R-SQ-xV0" eventType="touchUpInside" id="Zst-7K-Ffi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aa5-Le-iW6" firstAttribute="bottom" secondItem="AtX-J8-FSH" secondAttribute="bottom" constant="10" id="7DY-OX-7AD"/>
+                            <constraint firstItem="VtX-fZ-jnG" firstAttribute="leading" secondItem="aa5-Le-iW6" secondAttribute="leading" constant="10" id="RnU-AQ-bH9"/>
+                            <constraint firstItem="VtX-fZ-jnG" firstAttribute="top" secondItem="aa5-Le-iW6" secondAttribute="top" constant="10" id="Y13-77-0uy"/>
+                            <constraint firstItem="YzV-TL-6dc" firstAttribute="top" secondItem="aa5-Le-iW6" secondAttribute="top" id="ZY6-1u-MZa"/>
+                            <constraint firstItem="aa5-Le-iW6" firstAttribute="bottom" secondItem="YzV-TL-6dc" secondAttribute="bottom" id="ilv-3a-Ec2"/>
+                            <constraint firstItem="YzV-TL-6dc" firstAttribute="leading" secondItem="aa5-Le-iW6" secondAttribute="leading" id="oLz-FH-Wzp"/>
+                            <constraint firstItem="aa5-Le-iW6" firstAttribute="trailing" secondItem="AtX-J8-FSH" secondAttribute="trailing" constant="10" id="sfK-5A-B5Q"/>
+                            <constraint firstItem="aa5-Le-iW6" firstAttribute="trailing" secondItem="YzV-TL-6dc" secondAttribute="trailing" id="vvq-wo-ufO"/>
+                            <constraint firstItem="aa5-Le-iW6" firstAttribute="trailing" secondItem="VtX-fZ-jnG" secondAttribute="trailing" constant="10" id="xNn-it-bxO"/>
+                            <constraint firstItem="AtX-J8-FSH" firstAttribute="leading" secondItem="aa5-Le-iW6" secondAttribute="leading" constant="10" id="xvc-dK-37Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aa5-Le-iW6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ambil Sampah" id="XNI-PX-SsX"/>
+                    <navigationItem key="navigationItem" title="Ambil Sampah" largeTitleDisplayMode="never" id="j42-ff-32A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="619-E1-nxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1508.6956521739132" y="878.57142857142856"/>
+        </scene>
+        <!--Pelanggan-->
+        <scene sceneID="dLu-Ps-pYU">
+            <objects>
+                <viewController title="Pelanggan" id="9l9-lu-Qn1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z3q-To-MRM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Wry-4Y-E7U"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pelanggan" id="zhc-wb-lCe"/>
+                    <navigationItem key="navigationItem" title="Pelanggan" largeTitleDisplayMode="never" id="d4h-0P-UVS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LVi-U9-AD7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2783" y="879"/>
+        </scene>
+        <!--Profil-->
+        <scene sceneID="2pJ-w9-40L">
+            <objects>
+                <viewController title="Profil" id="q1s-Dx-xOl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qi8-al-q5W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="N7U-fd-cI9"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profil" id="3nZ-Ol-ceJ"/>
+                    <navigationItem key="navigationItem" title="Profil" largeTitleDisplayMode="never" id="FUq-wd-cNc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mtO-1E-4yP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4016" y="879"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JnD-uc-bTk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="otM-Lv-b5t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8mS-cC-sVk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1MW-oy-NvK" kind="relationship" relationship="rootViewController" id="nq0-8e-q5H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="roj-nW-bu1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599" y="151"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4oK-oL-pPh">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1MW-oy-NvK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="jka-cS-y9A"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QOf-uu-SeY">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="i7R-SQ-xV0" kind="relationship" relationship="viewControllers" id="i8M-JV-vEs"/>
+                        <segue destination="9l9-lu-Qn1" kind="relationship" relationship="viewControllers" id="Cf9-KH-eZC"/>
+                        <segue destination="q1s-Dx-xOl" kind="relationship" relationship="viewControllers" id="j0g-gf-eCX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNM-Og-aNg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1509" y="151"/>
+        </scene>
+    </scenes>
+</document>

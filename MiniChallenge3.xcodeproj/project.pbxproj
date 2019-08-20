@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04AF7AF5230BC3F1004E0E23 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AF7AF4230BC3F1004E0E23 /* MainPage.storyboard */; };
+		04AF7AF7230BC454004E0E23 /* AmbilSampahViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF7AF6230BC454004E0E23 /* AmbilSampahViewController.swift */; };
+		04AF7AF9230BC7F3004E0E23 /* ExtensionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF7AF8230BC7F3004E0E23 /* ExtensionClass.swift */; };
 		B79C22622306ACD3002E9CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C22612306ACD3002E9CCC /* AppDelegate.swift */; };
 		B79C22642306ACD3002E9CCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C22632306ACD3002E9CCC /* ViewController.swift */; };
 		B79C22672306ACD3002E9CCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79C22652306ACD3002E9CCC /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04AF7AF4230BC3F1004E0E23 /* MainPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
+		04AF7AF6230BC454004E0E23 /* AmbilSampahViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbilSampahViewController.swift; sourceTree = "<group>"; };
+		04AF7AF8230BC7F3004E0E23 /* ExtensionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionClass.swift; sourceTree = "<group>"; };
 		B79C225E2306ACD3002E9CCC /* MiniChallenge3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallenge3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79C22612306ACD3002E9CCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B79C22632306ACD3002E9CCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +43,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04AF7AF0230BC350004E0E23 /* AmbilSampah */ = {
+			isa = PBXGroup;
+			children = (
+				04AF7AF3230BC372004E0E23 /* Model */,
+				04AF7AF2230BC36C004E0E23 /* View */,
+				04AF7AF1230BC363004E0E23 /* Controller */,
+			);
+			path = AmbilSampah;
+			sourceTree = "<group>";
+		};
+		04AF7AF1230BC363004E0E23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04AF7AF6230BC454004E0E23 /* AmbilSampahViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04AF7AF2230BC36C004E0E23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04AF7AF4230BC3F1004E0E23 /* MainPage.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04AF7AF3230BC372004E0E23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04AF7AF8230BC7F3004E0E23 /* ExtensionClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B79C22552306ACD3002E9CCC = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +96,7 @@
 		B79C22602306ACD3002E9CCC /* MiniChallenge3 */ = {
 			isa = PBXGroup;
 			children = (
+				04AF7AF0230BC350004E0E23 /* AmbilSampah */,
 				B79C22612306ACD3002E9CCC /* AppDelegate.swift */,
 				B79C22632306ACD3002E9CCC /* ViewController.swift */,
 				B79C22652306ACD3002E9CCC /* Main.storyboard */,
@@ -128,6 +169,7 @@
 				B79C226F2306ACD4002E9CCC /* LaunchScreen.storyboard in Resources */,
 				B79C226C2306ACD4002E9CCC /* Assets.xcassets in Resources */,
 				B79C22672306ACD3002E9CCC /* Main.storyboard in Resources */,
+				04AF7AF5230BC3F1004E0E23 /* MainPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AF7AF9230BC7F3004E0E23 /* ExtensionClass.swift in Sources */,
+				04AF7AF7230BC454004E0E23 /* AmbilSampahViewController.swift in Sources */,
 				B79C22642306ACD3002E9CCC /* ViewController.swift in Sources */,
 				B79C22622306ACD3002E9CCC /* AppDelegate.swift in Sources */,
 				B79C226A2306ACD3002E9CCC /* MiniChallenge3.xcdatamodeld in Sources */,
@@ -287,7 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 9NAU7R3577;
 				INFOPLIST_FILE = MiniChallenge3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,7 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = 9NAU7R3577;
 				INFOPLIST_FILE = MiniChallenge3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

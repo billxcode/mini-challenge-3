@@ -18,16 +18,19 @@ class AmbilSampahViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+//        configureLocation()
     }
     
     @IBAction func lokasiSayaBtn(_ sender: Any) {
+        
         if CLLocationManager.locationServicesEnabled(){
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.distanceFilter = 100
             locationManager.startUpdatingLocation()
         }
         
-        configureLocation()
     }
     
     @IBAction func cariPelangganBtn(_ sender: Any) {
@@ -42,10 +45,10 @@ class AmbilSampahViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
     }
     
-    func fetchLocation(from location: CLLocation, completion: @escaping(_ city: String?, _ country:String?, _ error:Error?) -> ()){
+    func fetchLocation(from location: CLLocation, completion: @escaping(_ latitude: Double?, _ longitude:Double?, _ error:Error?) -> ()){
         CLGeocoder().reverseGeocodeLocation(location) {placemarks,error in
-            completion(placemarks?.first?.locality,
-                       placemarks?.first?.country,
+            completion(placemarks?.first?.location?.coordinate.latitude,
+                       placemarks?.first?.location?.coordinate.longitude,
                        error)
         }
     }
@@ -57,7 +60,12 @@ class AmbilSampahViewController: UIViewController, CLLocationManagerDelegate {
             guard let city = city, let country = country, error == nil else{return}
             
             print("City: ", city, " Country: ", country)
+            self.addMarkerInLocation()
         }
+    }
+    
+    func addMarkerInLocation(){
+        
     }
 
     

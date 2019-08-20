@@ -28,9 +28,14 @@ class RegisterViewController: UIViewController {
     
     @IBAction func daftarBtn(_ sender: UIButton) {
         if checkData() == true {
-            registerUser()
+            if registerUser() == true{
+                print("RegisterVC: daftarBtn -> Sukses Add Data")
+            }else{
+                print("RegisterVC: daftarBtn -> Gagal Add Data")
+            }
         }
     }
+    
     @IBAction func currentLocationBtn(_ sender: UIButton) {
     }
     
@@ -45,7 +50,7 @@ class RegisterViewController: UIViewController {
     }
     
     func registerUser() -> Bool {
-        var statusRegister = false
+        var isAvailable = false
         
         var dataUserModel = DataUserModel()
         dataUserModel.namaLengkap = namaLengkapTF.text
@@ -57,12 +62,20 @@ class RegisterViewController: UIViewController {
         dataUserModel.username = usernameTF.text
         dataUserModel.password = passwordTF.text
         
-//        for _ in databaseDataUser
-        databaseDataUser.append(dataUserModel)
-        //insert code for add to database
+        //perlu check apakah data yg di upload sudah ada di database
+        for data in databaseDataUser {
+            if data.noHP == dataUserModel.noHP{
+                isAvailable = true
+            }
+        }
         
-        return true
-        
-//        print("RegisterVC: registerUser -> check data user",dataUserModel)
+        //code untuk update DB
+        if isAvailable == true{
+            print("Nomor HP sudah terdaftar")
+            return false
+        }else{
+            databaseDataUser.append(dataUserModel)
+            return true
+        }
     }
 }

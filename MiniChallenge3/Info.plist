@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Ambil Sampah ingin mengakses lokasi anda saat ini</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Ambil Sampah ingin mengakses lokasi anda saat ini</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Ambil Sampah ingin mengakses lokasi anda saat ini</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -26,10 +20,16 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Ambil Sampah ingin mengakses lokasi anda saat ini</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Ambil Sampah ingin mengakses lokasi anda saat ini</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Ambil Sampah ingin mengakses lokasi anda saat ini</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>MainPage</string>
+	<string>MainPageSB</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

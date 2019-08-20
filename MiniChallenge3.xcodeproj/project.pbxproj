@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04AF7AF5230BC3F1004E0E23 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AF7AF4230BC3F1004E0E23 /* MainPage.storyboard */; };
+		04AF7AF7230BC454004E0E23 /* AmbilSampahViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF7AF6230BC454004E0E23 /* AmbilSampahViewController.swift */; };
+		04AF7AF9230BC7F3004E0E23 /* ExtensionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF7AF8230BC7F3004E0E23 /* ExtensionClass.swift */; };
 		B79C22622306ACD3002E9CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C22612306ACD3002E9CCC /* AppDelegate.swift */; };
 		B79C22642306ACD3002E9CCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C22632306ACD3002E9CCC /* ViewController.swift */; };
 		B79C22672306ACD3002E9CCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79C22652306ACD3002E9CCC /* Main.storyboard */; };
@@ -24,6 +27,9 @@
 		18DBF048CA650BA3FA90E579 /* Pods-MiniChallenge3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniChallenge3.release.xcconfig"; path = "Target Support Files/Pods-MiniChallenge3/Pods-MiniChallenge3.release.xcconfig"; sourceTree = "<group>"; };
 		2C893C93B0DE1EBF76A4187D /* Pods_MiniChallenge3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniChallenge3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4DD8A11CC715812C59F7C7 /* Pods-MiniChallenge3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniChallenge3.debug.xcconfig"; path = "Target Support Files/Pods-MiniChallenge3/Pods-MiniChallenge3.debug.xcconfig"; sourceTree = "<group>"; };
+		04AF7AF4230BC3F1004E0E23 /* MainPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
+		04AF7AF6230BC454004E0E23 /* AmbilSampahViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbilSampahViewController.swift; sourceTree = "<group>"; };
+		04AF7AF8230BC7F3004E0E23 /* ExtensionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionClass.swift; sourceTree = "<group>"; };
 		B79C225E2306ACD3002E9CCC /* MiniChallenge3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallenge3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79C22612306ACD3002E9CCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B79C22632306ACD3002E9CCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,20 +57,44 @@
 
 /* Begin PBXGroup section */
 		0BC45AF7BC9649DC800997F0 /* Frameworks */ = {
+		04AF7AF0230BC350004E0E23 /* AmbilSampah */ = {
+			isa = PBXGroup;
+			children = (
+				04AF7AF3230BC372004E0E23 /* Model */,
+				04AF7AF2230BC36C004E0E23 /* View */,
+				04AF7AF1230BC363004E0E23 /* Controller */,
+			);
+			path = AmbilSampah;
+			sourceTree = "<group>";
+		};
+		04AF7AF1230BC363004E0E23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04AF7AF6230BC454004E0E23 /* AmbilSampahViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04AF7AF2230BC36C004E0E23 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				2C893C93B0DE1EBF76A4187D /* Pods_MiniChallenge3.framework */,
+				04AF7AF4230BC3F1004E0E23 /* MainPage.storyboard */,
 			);
 			name = Frameworks;
+			path = View;
 			sourceTree = "<group>";
 		};
 		5B479E481BAC8ED33DB7FBE1 /* Pods */ = {
+		04AF7AF3230BC372004E0E23 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				7A4DD8A11CC715812C59F7C7 /* Pods-MiniChallenge3.debug.xcconfig */,
 				18DBF048CA650BA3FA90E579 /* Pods-MiniChallenge3.release.xcconfig */,
+				04AF7AF8230BC7F3004E0E23 /* ExtensionClass.swift */,
 			);
 			path = Pods;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B79C22552306ACD3002E9CCC = {
@@ -88,6 +118,7 @@
 		B79C22602306ACD3002E9CCC /* MiniChallenge3 */ = {
 			isa = PBXGroup;
 			children = (
+				04AF7AF0230BC350004E0E23 /* AmbilSampah */,
 				DB294D25230BA2D30090B86B /* LogIn */,
 				B79C22612306ACD3002E9CCC /* AppDelegate.swift */,
 				B79C22632306ACD3002E9CCC /* ViewController.swift */,
@@ -199,6 +230,7 @@
 				DB294D29230BA3130090B86B /* LoginStoryboard.storyboard in Resources */,
 				B79C226C2306ACD4002E9CCC /* Assets.xcassets in Resources */,
 				B79C22672306ACD3002E9CCC /* Main.storyboard in Resources */,
+				04AF7AF5230BC3F1004E0E23 /* MainPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AF7AF9230BC7F3004E0E23 /* ExtensionClass.swift in Sources */,
+				04AF7AF7230BC454004E0E23 /* AmbilSampahViewController.swift in Sources */,
 				DB294D27230BA3010090B86B /* LogInViewController.swift in Sources */,
 				DB294D31230BAE8A0090B86B /* DataUserModel.swift in Sources */,
 				DB294D2B230BA97B0090B86B /* RegisterViewController.swift in Sources */,

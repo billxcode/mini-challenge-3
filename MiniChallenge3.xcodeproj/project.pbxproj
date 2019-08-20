@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,9 +17,13 @@
 		DB294D29230BA3130090B86B /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB294D28230BA3130090B86B /* LoginStoryboard.storyboard */; };
 		DB294D2B230BA97B0090B86B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB294D2A230BA97B0090B86B /* RegisterViewController.swift */; };
 		DB294D31230BAE8A0090B86B /* DataUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB294D30230BAE8A0090B86B /* DataUserModel.swift */; };
+		ED4971ABEC90512E9B6CCF26 /* Pods_MiniChallenge3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C893C93B0DE1EBF76A4187D /* Pods_MiniChallenge3.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18DBF048CA650BA3FA90E579 /* Pods-MiniChallenge3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniChallenge3.release.xcconfig"; path = "Target Support Files/Pods-MiniChallenge3/Pods-MiniChallenge3.release.xcconfig"; sourceTree = "<group>"; };
+		2C893C93B0DE1EBF76A4187D /* Pods_MiniChallenge3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniChallenge3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4DD8A11CC715812C59F7C7 /* Pods-MiniChallenge3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniChallenge3.debug.xcconfig"; path = "Target Support Files/Pods-MiniChallenge3/Pods-MiniChallenge3.debug.xcconfig"; sourceTree = "<group>"; };
 		B79C225E2306ACD3002E9CCC /* MiniChallenge3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallenge3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79C22612306ACD3002E9CCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B79C22632306ACD3002E9CCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4971ABEC90512E9B6CCF26 /* Pods_MiniChallenge3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BC45AF7BC9649DC800997F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C893C93B0DE1EBF76A4187D /* Pods_MiniChallenge3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B479E481BAC8ED33DB7FBE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A4DD8A11CC715812C59F7C7 /* Pods-MiniChallenge3.debug.xcconfig */,
+				18DBF048CA650BA3FA90E579 /* Pods-MiniChallenge3.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B79C22552306ACD3002E9CCC = {
 			isa = PBXGroup;
 			children = (
 				B79C22602306ACD3002E9CCC /* MiniChallenge3 */,
 				B79C225F2306ACD3002E9CCC /* Products */,
+				5B479E481BAC8ED33DB7FBE1 /* Pods */,
+				0BC45AF7BC9649DC800997F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B79C22732306ACD4002E9CCC /* Build configuration list for PBXNativeTarget "MiniChallenge3" */;
 			buildPhases = (
+				BD016F3D053A2F7E6448CE5E /* [CP] Check Pods Manifest.lock */,
 				B79C225A2306ACD3002E9CCC /* Sources */,
 				B79C225B2306ACD3002E9CCC /* Frameworks */,
 				B79C225C2306ACD3002E9CCC /* Resources */,
+				61901AA4C392FB7F588084F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,6 +203,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61901AA4C392FB7F588084F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiniChallenge3/Pods-MiniChallenge3-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiniChallenge3/Pods-MiniChallenge3-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiniChallenge3/Pods-MiniChallenge3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD016F3D053A2F7E6448CE5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiniChallenge3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B79C225A2306ACD3002E9CCC /* Sources */ = {
@@ -332,10 +400,11 @@
 		};
 		B79C22742306ACD4002E9CCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4DD8A11CC715812C59F7C7 /* Pods-MiniChallenge3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JK4PTY857R;
+				DEVELOPMENT_TEAM = 9NAU7R3577;
 				INFOPLIST_FILE = MiniChallenge3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -350,10 +419,11 @@
 		};
 		B79C22752306ACD4002E9CCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18DBF048CA650BA3FA90E579 /* Pods-MiniChallenge3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JK4PTY857R;
+				DEVELOPMENT_TEAM = 9NAU7R3577;
 				INFOPLIST_FILE = MiniChallenge3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

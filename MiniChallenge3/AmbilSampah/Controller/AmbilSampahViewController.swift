@@ -17,8 +17,6 @@ class AmbilSampahViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-//        configureLocation()
     }
     
     @IBAction func lokasiSayaBtn(_ sender: Any) {

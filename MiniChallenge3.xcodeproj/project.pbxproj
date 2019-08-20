@@ -16,6 +16,10 @@
 		B79C226A2306ACD3002E9CCC /* MiniChallenge3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B79C22682306ACD3002E9CCC /* MiniChallenge3.xcdatamodeld */; };
 		B79C226C2306ACD4002E9CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79C226B2306ACD4002E9CCC /* Assets.xcassets */; };
 		B79C226F2306ACD4002E9CCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79C226D2306ACD4002E9CCC /* LaunchScreen.storyboard */; };
+		DB294D27230BA3010090B86B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB294D26230BA3010090B86B /* LogInViewController.swift */; };
+		DB294D29230BA3130090B86B /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB294D28230BA3130090B86B /* LoginStoryboard.storyboard */; };
+		DB294D2B230BA97B0090B86B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB294D2A230BA97B0090B86B /* RegisterViewController.swift */; };
+		DB294D31230BAE8A0090B86B /* DataUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB294D30230BAE8A0090B86B /* DataUserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		B79C226B2306ACD4002E9CCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B79C226E2306ACD4002E9CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B79C22702306ACD4002E9CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB294D26230BA3010090B86B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		DB294D28230BA3130090B86B /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		DB294D2A230BA97B0090B86B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		DB294D30230BAE8A0090B86B /* DataUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				04AF7AF0230BC350004E0E23 /* AmbilSampah */,
+				DB294D25230BA2D30090B86B /* LogIn */,
 				B79C22612306ACD3002E9CCC /* AppDelegate.swift */,
 				B79C22632306ACD3002E9CCC /* ViewController.swift */,
 				B79C22652306ACD3002E9CCC /* Main.storyboard */,
@@ -106,6 +115,41 @@
 				B79C22682306ACD3002E9CCC /* MiniChallenge3.xcdatamodeld */,
 			);
 			path = MiniChallenge3;
+			sourceTree = "<group>";
+		};
+		DB294D25230BA2D30090B86B /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				DB294D2F230BAE270090B86B /* Controller */,
+				DB294D2D230BAE160090B86B /* View */,
+				DB294D2C230BAE040090B86B /* Model */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		DB294D2C230BAE040090B86B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB294D30230BAE8A0090B86B /* DataUserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB294D2D230BAE160090B86B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB294D28230BA3130090B86B /* LoginStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB294D2F230BAE270090B86B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB294D26230BA3010090B86B /* LogInViewController.swift */,
+				DB294D2A230BA97B0090B86B /* RegisterViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B79C226F2306ACD4002E9CCC /* LaunchScreen.storyboard in Resources */,
+				DB294D29230BA3130090B86B /* LoginStoryboard.storyboard in Resources */,
 				B79C226C2306ACD4002E9CCC /* Assets.xcassets in Resources */,
 				B79C22672306ACD3002E9CCC /* Main.storyboard in Resources */,
 				04AF7AF5230BC3F1004E0E23 /* MainPage.storyboard in Resources */,
@@ -182,6 +227,9 @@
 			files = (
 				04AF7AF9230BC7F3004E0E23 /* ExtensionClass.swift in Sources */,
 				04AF7AF7230BC454004E0E23 /* AmbilSampahViewController.swift in Sources */,
+				DB294D27230BA3010090B86B /* LogInViewController.swift in Sources */,
+				DB294D31230BAE8A0090B86B /* DataUserModel.swift in Sources */,
+				DB294D2B230BA97B0090B86B /* RegisterViewController.swift in Sources */,
 				B79C22642306ACD3002E9CCC /* ViewController.swift in Sources */,
 				B79C22622306ACD3002E9CCC /* AppDelegate.swift in Sources */,
 				B79C226A2306ACD3002E9CCC /* MiniChallenge3.xcdatamodeld in Sources */,
@@ -337,7 +385,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.behato.MiniChallenge3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.MiniChallenge3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,7 +403,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.behato.MiniChallenge3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.MiniChallenge3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

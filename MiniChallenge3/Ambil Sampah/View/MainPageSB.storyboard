@@ -10,21 +10,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Ambil SampahVC-->
         <scene sceneID="n1b-sS-SpB">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T1k-ON-Dbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Mb8-b3-FRD" sceneMemberID="viewController">
+                <viewController id="Mb8-b3-FRD" customClass="AmbilSampahVC" customModule="MiniChallenge3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cYL-ya-c9d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AMbil Sampah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="je7-NY-RCW">
+                                <rect key="frame" x="186" y="438" width="111" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mUI-Bm-fkr"/>
                     </view>
                     <navigationItem key="navigationItem" id="luV-v5-Hfj"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-1178" y="1496"/>
+            <point key="canvasLocation" x="-1178.2608695652175" y="1495.9821428571429"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="AKx-aO-pHg">
@@ -37,8 +46,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="aRk-2Z-QYI" kind="relationship" relationship="viewControllers" id="SKB-Zu-OnJ"/>
-                        <segue destination="aBM-l9-fjK" kind="relationship" relationship="viewControllers" id="nG9-b2-iNW"/>
-                        <segue destination="VJD-Wx-niv" kind="relationship" relationship="viewControllers" id="iMp-9i-Ghl"/>
+                        <segue destination="DJJ-WL-fbH" kind="relationship" relationship="viewControllers" id="3pe-BQ-NME"/>
+                        <segue destination="zsV-V9-irb" kind="relationship" relationship="viewControllers" id="Lmh-p0-WAv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eKF-Sq-Gu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -49,7 +58,7 @@
         <scene sceneID="G4R-OX-zza">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aRk-2Z-QYI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Ambil Sampah" id="HU3-iI-Ul6"/>
+                    <tabBarItem key="tabBarItem" title="Ambil Sampah" image="journalLogoOn32" id="HU3-iI-Ul6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FGL-28-3WN">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -68,21 +77,62 @@
         <scene sceneID="xdX-ow-3yA">
             <objects>
                 <viewControllerPlaceholder storyboardName="PelangganSB" id="aBM-l9-fjK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="dTk-fp-bhl"/>
+                    <navigationItem key="navigationItem" id="DZ6-vt-Ec0"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xA-tj-Aaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-493" y="433"/>
+            <point key="canvasLocation" x="-436" y="1221"/>
         </scene>
         <!--ProfilSB-->
         <scene sceneID="iyH-e7-iL5">
             <objects>
                 <viewControllerPlaceholder storyboardName="ProfilSB" id="VJD-Wx-niv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yb9-fN-TQL"/>
+                    <navigationItem key="navigationItem" id="IK7-O7-OBi"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8u7-FY-okr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-122" y="433"/>
+            <point key="canvasLocation" x="388" y="1221"/>
+        </scene>
+        <!--Pelanggan-->
+        <scene sceneID="omj-xg-N7v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DJJ-WL-fbH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pelanggan" image="journalLogoOn32" id="dTk-fp-bhl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OCZ-Ku-dFa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aBM-l9-fjK" kind="relationship" relationship="rootViewController" id="hgT-9w-ijQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JlG-Uy-UqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-435" y="741"/>
+        </scene>
+        <!--Profil-->
+        <scene sceneID="0pe-WT-2kh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zsV-V9-irb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profil" image="journalLogoOn32" id="yb9-fN-TQL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Jt-cf-j8O">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VJD-Wx-niv" kind="relationship" relationship="rootViewController" id="CKl-57-0P9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e3O-d9-Z5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="388" y="741"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="journalLogoOn32" width="31" height="30"/>
+    </resources>
 </document>

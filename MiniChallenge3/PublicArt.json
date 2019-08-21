@@ -1,0 +1,65 @@
+[
+    {
+        "Name": "Bu Dea",
+        "Address": "Cosmo Western 12, D8/87",
+        "phone_number": 213131,
+        "status_subs": "sub_with_me",
+        "active_subs": "24/10/2020",
+        "latitude": -6.309455,
+        "Longitude": 106.6473308
+    },
+    {
+        "Name": "Pak George",
+        "Address": "Cosmo Western 12, D8/87",
+        "phone_number": 23423452,
+        "status_subs": "sub_with_me",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3092127,
+        "Longitude": 106.6472976
+    },
+    {
+        "Name": "Bu Jessica",
+        "Address": "Cosmo Western 12, D8/87",
+        "phone_number": 52342342,
+        "status_subs": "sub_with_me",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3092527,
+        "Longitude": 106.6474468
+    },
+    {
+        "Name": "Pak Bill",
+        "Address": "Cosmo Western 12, D8/87",
+        "phone_number": 635464743,
+        "status_subs": "sub_with_me",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3093377,
+        "Longitude": 106.6477658
+    },
+    {
+        "Name": "Pak Nanda",
+        "Address": "Cosmo Western 12, D8/87",
+        "phone_number": 4265474,
+        "status_subs": "sub_with_me",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3093747,
+        "Longitude": 106.6479328
+    },
+    {
+        "Name": "Pak Edward",
+        "Address": "Cosmo Western 12, D8/87",
+        "phone_number": 4252361897,
+        "status_subs": "sub_with_me",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3094767,
+        "Longitude": 106.6482538
+    },
+    {
+        "Name": "Pak Wimba",
+        "Address": "Cosmo Western 12, D8/87",
+        "phone_number": 67856342532,
+        "status_subs": "sub_with_me",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3099337,
+        "Longitude": 106.6483578
+    }
+]

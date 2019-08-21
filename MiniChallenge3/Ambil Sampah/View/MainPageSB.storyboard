@@ -22,6 +22,18 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7g6-DQ-zzq">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6i-Ig-Cfv">
+                                <rect key="frame" x="368" y="709" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="g6s-CI-Vy6"/>
+                                    <constraint firstAttribute="height" constant="30" id="jgs-29-FBT"/>
+                                </constraints>
+                                <state key="normal" image="place"/>
+                                <connections>
+                                    <action selector="lokasiSayaBtn:" destination="Mb8-b3-FRD" eventType="touchUpInside" id="VxG-YQ-VoQ"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EN-FK-aT4">
                                 <rect key="frame" x="16" y="755" width="382" height="48"/>
                                 <color key="backgroundColor" red="0.97682690230000002" green="0.97682690230000002" blue="0.97682690230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -38,18 +50,21 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OB6-QQ-WDr">
                                 <rect key="frame" x="16" y="98" width="382" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6i-Ig-Cfv">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eq-gP-MHX">
                                         <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
                                         <color key="backgroundColor" red="0.97682690230000002" green="0.97682690230000002" blue="0.97682690230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Lokasi Saya"/>
+                                        <state key="normal" title="Pelanggan Saya"/>
                                         <connections>
-                                            <action selector="lokasiSayaBtn:" destination="Mb8-b3-FRD" eventType="touchUpInside" id="VxG-YQ-VoQ"/>
+                                            <action selector="pelangganSayaBtn:" destination="Mb8-b3-FRD" eventType="touchUpInside" id="8hm-wr-6m7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTq-Fk-8Lm">
                                         <rect key="frame" x="195" y="0.0" width="187" height="30"/>
                                         <color key="backgroundColor" red="0.97682690230000002" green="0.97682690230000002" blue="0.97682690230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Cari Pelanggan"/>
+                                        <connections>
+                                            <action selector="cariPelangganBtn:" destination="Mb8-b3-FRD" eventType="touchUpInside" id="Z0X-HV-2UC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -58,6 +73,7 @@
                         <constraints>
                             <constraint firstItem="7g6-DQ-zzq" firstAttribute="top" secondItem="mUI-Bm-fkr" secondAttribute="top" id="0s5-nS-bby"/>
                             <constraint firstItem="OB6-QQ-WDr" firstAttribute="top" secondItem="mUI-Bm-fkr" secondAttribute="top" constant="10" id="4zF-vs-q12"/>
+                            <constraint firstItem="4EN-FK-aT4" firstAttribute="top" secondItem="P6i-Ig-Cfv" secondAttribute="bottom" constant="16" id="53s-a8-4NY"/>
                             <constraint firstItem="7g6-DQ-zzq" firstAttribute="leading" secondItem="mUI-Bm-fkr" secondAttribute="leading" id="BoP-LM-1zl"/>
                             <constraint firstItem="mUI-Bm-fkr" firstAttribute="trailing" secondItem="4EN-FK-aT4" secondAttribute="trailing" constant="16" id="JGs-BW-cdt"/>
                             <constraint firstItem="4EN-FK-aT4" firstAttribute="leading" secondItem="mUI-Bm-fkr" secondAttribute="leading" constant="16" id="R6d-Ys-dkv"/>
@@ -65,6 +81,7 @@
                             <constraint firstItem="mUI-Bm-fkr" firstAttribute="bottom" secondItem="7g6-DQ-zzq" secondAttribute="bottom" id="aWg-Wp-Fcy"/>
                             <constraint firstItem="mUI-Bm-fkr" firstAttribute="bottom" secondItem="4EN-FK-aT4" secondAttribute="bottom" constant="10" id="brj-dX-IoU"/>
                             <constraint firstItem="mUI-Bm-fkr" firstAttribute="trailing" secondItem="7g6-DQ-zzq" secondAttribute="trailing" id="fKM-L2-7km"/>
+                            <constraint firstItem="mUI-Bm-fkr" firstAttribute="trailing" secondItem="P6i-Ig-Cfv" secondAttribute="trailing" constant="16" id="lPC-0N-d0q"/>
                             <constraint firstItem="OB6-QQ-WDr" firstAttribute="leading" secondItem="mUI-Bm-fkr" secondAttribute="leading" constant="16" id="pzj-36-aeh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mUI-Bm-fkr"/>
@@ -178,5 +195,6 @@
     </scenes>
     <resources>
         <image name="journalLogoOn32" width="31" height="30"/>
+        <image name="place" width="512" height="512"/>
     </resources>
 </document>

@@ -18,8 +18,10 @@ class AmbilSampahVC: UIViewController, CLLocationManagerDelegate{
     
     //2. create CLLocationManager
     let manager = CLLocationManager()
-    
     var arrayUserData : [UserDataModel] = []
+    
+    var statusPelanggan = "sub_with_me"
+    var pelangganByStatus = [UserDataModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,13 +35,21 @@ class AmbilSampahVC: UIViewController, CLLocationManagerDelegate{
         
 
         getLocation()
-        
-//        showUserLocation()
 
     }
     
     @IBAction func lokasiSayaBtn(_ sender: Any) {
         getLocation()
+    }
+    
+    @IBAction func cariPelangganBtn(_ sender: Any) {
+        statusPelanggan = "no_sub_yet"
+        mapKitView.reloadInputViews()
+    }
+    
+    @IBAction func pelangganSayaBtn(_ sender: Any) {
+        statusPelanggan = "sub_with_me"
+        mapKitView.reloadInputViews()
     }
     
     func getLocation() {
@@ -76,22 +86,14 @@ class AmbilSampahVC: UIViewController, CLLocationManagerDelegate{
             let data = try Data(contentsOf: file)
             let json = try JSONSerialization.jsonObject(with: data, options: [])
             
-            print(json)
-            
-            guard let object = json as? [[String: String]] else { print("json invalid"); return}
-            
+            guard let object = json as? [[String: Any]] else { print("json invalid"); return}
+
             for data in object{
-                let lat = Double(data["latitude"]!)
-                let long = Double(data["longitude"]!)
-                
-                let validData = UserDataModel(
-                    name: data["name"]!,
-                    address: data["address"]!,
-                    phoneNumber: data["phone_number"]!,
-                    coordinate: CLLocationCoordinate2D(
-                        latitude: lat!,
-                        longitude: long!))
-                
+                let lat = data["latitude"]
+                let long = data["longitude"]
+                let phoneNumb = data["phone_number"] as! Int
+
+                let validData = UserDataModel(name: data["name"] as! String, address: data["address"] as! String, phoneNumber: String(phoneNumb), latitude: lat as! Double, longitude: long as! Double, status: data["status_subs"] as! String)
                 arrayUserData.append(validData)
             }
             
@@ -133,8 +135,22 @@ extension AmbilSampahVC: MKMapViewDelegate{
     //MARK:-MKMapView Protocol
     //to set every view of annotation (same like cellForRowAt in tableview)
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        
+        pelangganByStatus.removeAll()
+        if statusPelanggan == "sub_with_me"{
+            for data in arrayUserData{
+                if data.status_subs == "sub_with_me"{
+                    pelangganByStatus.append(data)
+                }
+            }
+        }else if statusPelanggan == "no_sub_yet"{
+            for data in arrayUserData{
+                if data.status_subs == "no_sub_yet"{
+                    pelangganByStatus.append(data)
+                }
+            }
+        }
         guard let annotation = annotation as? UserDataModel else { return nil }
+        print("ASVC: ViewFor-> Check Annotation, ", annotation)
         let identifier = "marker"
         var view: MKMarkerAnnotationView
         if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {

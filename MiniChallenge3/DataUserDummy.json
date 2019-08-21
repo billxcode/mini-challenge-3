@@ -61,5 +61,32 @@
         "active_subs": "24/10/2020",
         "latitude": -6.3099337,
         "longitude": 106.6483578
+    },
+    {
+        "name": "Pak Ben",
+        "address": "Cosmo Western 12, D8/87",
+        "phone_number": 4265474,
+        "status_subs": "no_sub_yet",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3093747,
+        "longitude": 106.6479328
+    },
+    {
+        "name": "Pak Okta",
+        "address": "Cosmo Western 12, D8/87",
+        "phone_number": 4252361897,
+        "status_subs": "no_sub_yet",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3094767,
+        "longitude": 106.6482538
+    },
+    {
+        "name": "Bu Rara",
+        "address": "Cosmo Western 12, D8/87",
+        "phone_number": 67856342532,
+        "status_subs": "no_sub_yet",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3099337,
+        "longitude": 106.6483578
     }
 ]

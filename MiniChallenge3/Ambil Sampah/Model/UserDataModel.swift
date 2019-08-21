@@ -12,20 +12,26 @@ import MapKit
 import Contacts
 
 class UserDataModel: NSObject, MKAnnotation{
+    
     var coordinate: CLLocationCoordinate2D
+    let title: String?
     
     let name: String
     let address: String
     let phoneNumber: String
-    let latitude: String
-    let longitude: String
+    let latitude: Double
+    let longitude: Double
+    let status_subs: String
     
-    init(name: String, address: String, phoneNumber: String, latitude: String, longitude: String) {
+    init(name: String, address: String, phoneNumber: String, latitude: Double, longitude: Double, status: String) {
         self.name = name
         self.address = address
         self.phoneNumber = phoneNumber
         self.latitude = latitude
         self.longitude = longitude
+        self.status_subs = status
+        self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        self.title = name
         
         super.init()
     }
@@ -57,7 +63,7 @@ class UserDataModel: NSObject, MKAnnotation{
         let addressDict = [CNPostalAddressStreetKey: subtitle!]
         let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDict)
         let mapItem = MKMapItem(placemark: placemark)
-        mapItem.name = name
+        mapItem.name = title
         return mapItem
     }
     

@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Bu Dea",
+        "address": "Cosmo Western 12, D8/87",
+        "phone_number": 213131,
+        "status_subs": "sub_with_me",
+        "active_subs": "24/10/2020",
+        "latitude": -6.309455,
+        "longitude": 106.6473308
+    },
+    {
+        "name": "Pak George",
+        "address": "Cosmo Western 12, D8/87",
+        "phone_number": 23423452,
+        "status_subs": "sub_with_me",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3092127,
+        "longitude": 106.6472976
+    },
+    {
+        "name": "Bu Jessica",
+        "address": "Cosmo Western 12, D8/87",
+        "phone_number": 52342342,
+        "status_subs": "sub_with_me",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3092527,
+        "longitude": 106.6474468
+    },
+    {
+        "name": "Pak Bill",
+        "address": "Cosmo Western 12, D8/87",
+        "phone_number": 635464743,
+        "status_subs": "sub_with_me",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3093377,
+        "longitude": 106.6477658
+    },
+    {
+        "name": "Pak Nanda",
+        "address": "Cosmo Western 12, D8/87",
+        "phone_number": 4265474,
+        "status_subs": "sub_with_me",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3093747,
+        "longitude": 106.6479328
+    },
+    {
+        "name": "Pak Edward",
+        "address": "Cosmo Western 12, D8/87",
+        "phone_number": 4252361897,
+        "status_subs": "sub_with_me",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3094767,
+        "longitude": 106.6482538
+    },
+    {
+        "name": "Pak Wimba",
+        "address": "Cosmo Western 12, D8/87",
+        "phone_number": 67856342532,
+        "status_subs": "sub_with_me",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3099337,
+        "longitude": 106.6483578
+    },
+    {
+        "name": "Pak Ben",
+        "address": "Cosmo Western 12, D8/87",
+        "phone_number": 4265474,
+        "status_subs": "no_sub_yet",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3093747,
+        "longitude": 106.6479328
+    },
+    {
+        "name": "Pak Okta",
+        "address": "Cosmo Western 12, D8/87",
+        "phone_number": 4252361897,
+        "status_subs": "no_sub_yet",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3094767,
+        "longitude": 106.6482538
+    },
+    {
+        "name": "Bu Rara",
+        "address": "Cosmo Western 12, D8/87",
+        "phone_number": 67856342532,
+        "status_subs": "no_sub_yet",
+        "active_subs": "24/10/2020",
+        "latitude": -6.3099337,
+        "longitude": 106.6483578
+    }
+]
